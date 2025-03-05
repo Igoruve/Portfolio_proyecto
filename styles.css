@@ -266,10 +266,20 @@ textarea {
   color: black;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+}
 .card h2,
 .card p {
   margin: 0;
-  padding: 1rem 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.card p{
+  text-transform: uppercase;
 }
 
 #frieren_texto_imagen {
