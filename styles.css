@@ -1,0 +1,248 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --verde-claro: hsl(108, 66%, 80%);
+  --rosita: hsl(345, 71%, 51%);
+  --blanco-sucio: hsl(45, 33%, 93%);
+  --gris-claro: hsl(210, 20%, 98%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  font-family: Helvetica;
+  background-color: var(--blanco-sucio);
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-block: 50px;
+  padding-block: 0;
+  font-size: 3rem;
+  letter-spacing: -0.125rem;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5 rem;
+}
+
+p {
+  margin: 0;
+  max-width: 60ch;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  padding-bottom: 1.25rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.barra {
+  background-color: var(--verde-claro);
+  z-index: 10;
+  position: sticky;
+}
+
+.sticker_frieren {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid green;
+}
+
+.navbar,
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-block: 24px;
+  padding-inline: 120px;
+  justify-content: space-between;
+}
+
+.navbar {
+  box-shadow: 0.5px 0.5px 10px gray;
+}
+
+.navbar ul {
+  justify-content: end;
+}
+
+.navbar li {
+  padding-left: 32px;
+}
+
+li a {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  transition: color, 200ms;
+}
+
+li a:hover {
+  color: var(--rosita);
+  transition: ease-in-out;
+}
+
+.activo {
+  color: var(--rosita);
+}
+
+main {
+  margin-inline: 200px;
+}
+
+.demonio {
+  width: 50%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px gray;
+}
+
+footer div {
+  display: flex;
+  padding-bottom: 0.5rem;
+}
+
+footer div img {
+  align-items: center;
+
+  padding-right: 8px;
+}
+
+footer h3 {
+  font-size: 1.125rem;
+}
+
+footer p {
+  font-size: 1 rem;
+  align-items: center;
+  padding: 0;
+}
+
+footer a {
+  margin-block: 50px;
+  margin-inline: 200px;
+}
+
+#footer_info {
+  margin-block: 20px;
+  margin-inline: 200px;
+}
+
+#formulario {
+  margin-block: 100px;
+  padding-inline: 350px;
+}
+
+.form_title {
+  justify-content: center;
+  margin-block: 50px;
+}
+
+form {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px 24px;
+  width: 400px;
+}
+
+form p {
+  width: 390px;
+}
+
+input,
+textarea {
+  margin-top: 12px;
+}
+
+input {
+  width: 90%;
+}
+
+textarea {
+  width: 90%;
+  max-width: 90%;
+}
+
+#campoNombre,
+#campoEmail,
+#campoComentarios,
+.form_button {
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: var(--gris-claro);
+}
+
+#campoNombre,
+#campoEmail,
+#campoComentarios {
+  box-shadow: 1px 1px 1px gray;
+  padding: 10px 8px;
+}
+
+.form_button {
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  background-color: var(--verde-claro);
+  width: 50%;
+  font-size: 1.125rem;
+  transition: all 150ms ease-out;
+  translate: 100%;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.form_button:hover {
+  background-color: var(--blanco-sucio);
+  scale: 105%;
+}
+
+#frieren_texto_imagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  padding-bottom: 50px;
+}
+
+#frieren_imagen img {
+  max-height: 100%;
+}

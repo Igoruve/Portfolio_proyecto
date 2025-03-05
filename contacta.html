@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="barra" id="contenidoHeader">
+      <nav class="navbar">
+        <a href="/Portfolio_proyecto/index.html"
+          ><img
+            src="/Portfolio_proyecto/imagenes/740111eb46317913e69d622b8d1c0373.jpg"
+            alt="Sticker Frieren"
+            class="sticker_frieren"
+        /></a>
+        <ul class="lista_navbar">
+          <li><a href="/Portfolio_proyecto/index.html">Sinopsis</a></li>
+          <li><a href="/Portfolio_proyecto/Frieren.html">Frieren</a></li>
+          <li><a href="/Portfolio_proyecto/Fern.html">Fern</a></li>
+          <li><a href="/Portfolio_proyecto/Stark.html">Stark</a></li>
+          <li>
+            <a href="/Portfolio_proyecto/contacta.html" class="activo"
+              >Contacta</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="form_title">Contáctanos</h2>
+      <section id="formulario">
+        <form
+          name="formcont"
+          id="formcont"
+          action="mailto:igoruve@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <p>
+            <label for="campoNombre"><strong>Nombre:</strong></label>
+            <br />
+            <input
+              type="text"
+              name="campoNombre"
+              id="campoNombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </p>
+          <p>
+            <label for="campoEmail"><strong>Email:</strong></label>
+            <br />
+            <input
+              type="email"
+              name="campoEmail"
+              id="campoEmail"
+              placeholder="Tu email"
+              required
+            />
+          </p>
+          <p>
+            <label for="campoComentarios"><strong>Mensaje:</strong></label
+            ><br />
+            <textarea
+              name="campoComentarios"
+              id="campoComentarios"
+              cols="auto"
+              rows="auto"
+              required
+            >
+            </textarea>
+          </p>
+          <input class="form_button" type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section id="footer_info">
+        <h3>Información</h3>
+        <div>
+          <img
+            src="/Portfolio_proyecto/imagenes/location_on_20dp_B8EEAA_FILL0_wght400_GRAD0_opsz20.svg"
+            alt="localizacion"
+          />
+          <p>Erronda Kalea, 48005 Bilbao</p>
+        </div>
+        <div>
+          <img
+            src="/Portfolio_proyecto/imagenes/mail_20dp_B8EEAA_FILL0_wght400_GRAD0_opsz20.svg"
+            alt="email"
+          />
+          <p>info@gmail.com</p>
+        </div>
+        <div>
+          <img
+            src="/Portfolio_proyecto/imagenes/call_20dp_B8EEAA_FILL0_wght400_GRAD0_opsz20.svg"
+            alt="phone"
+          />
+          <p>+34 666666666</p>
+        </div>
+      </section>
+      <a href="contacta.html"
+        ><img
+          src="/Portfolio_proyecto/imagenes/round-icons-gtb1yacYVuc-unsplash.svg"
+          alt="flecha"
+          width="60"
+          height="60"
+      /></a>
+    </footer>
+  </body>
+</html>
